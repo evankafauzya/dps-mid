@@ -5,12 +5,11 @@
 
 A fullstack web application using **Flask** for the backend and **Nginx** for serving the frontend static files. It uses **Docker Compose** to run both services together.
 
----
 ````
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 Make sure Docker is installed and running, then:
 
@@ -24,7 +23,7 @@ docker compose up --build
 
 If everything builds successfully, open your browser and visit:
 
-👉 **[http://localhost:8081](http://localhost:8081)**
+**[http://localhost:8081](http://localhost:8081)**
 
 * This serves the frontend via Nginx
 * The Flask backend runs on `http://localhost:5001` and is proxied via Nginx for `/api/*` calls
