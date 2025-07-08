@@ -6,25 +6,6 @@
 A fullstack web application using **Flask** for the backend and **Nginx** for serving the frontend static files. It uses **Docker Compose** to run both services together.
 
 ---
-
-## 📦 Project Structure
-
-```
-
-DPS-Mid/
-├── backend/                 # Flask API server
-│   └── app.py
-├── frontend/                # Static site (HTML/CSS/JS + Nginx)
-│   ├── index.html
-│   ├── 5sproject.html
-│   ├── style.css
-│   ├── script.js
-│   ├── images/
-│   ├── files/
-│   └── nginx.conf
-├── docker-compose.yml
-└── README.md
-
 ````
 
 ---
