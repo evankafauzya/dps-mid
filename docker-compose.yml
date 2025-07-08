@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./backend:/app
+      - ./frontend:/frontend
+    networks:
+      - webnet
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8081:81"
+    networks:
+      - webnet
+    depends_on:
+      - backend
+
+networks:
+  webnet:
+    driver: bridge
